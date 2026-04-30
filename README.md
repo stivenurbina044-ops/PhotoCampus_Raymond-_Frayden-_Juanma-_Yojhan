@@ -5,7 +5,7 @@ Sistema para gestionar servicios fotográficos como bodas, retratos y productos.
 
 1. Clonar el repositorio
 2. Ejecutar:
-   python main.py
+   main.py
 
 - main.py → programa principal
 - servicios.py → lógica del negocio
