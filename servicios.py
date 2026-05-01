@@ -22,8 +22,13 @@ def agregar_servicio():
 def listar_servicios():
     servicios = cargar_servicios()
     for i, s in enumerate(servicios):
-        print(f"{i}. {s}")
-
+        print(f"\nServicio #{i}")
+        print(f"Nombre: {s['nombre']}")
+        print(f"Precio: {s['precio']}")
+        print(f"Tipo de evento: {s['tipo_evento']}")
+        print(f"Duración: {s['duracion']} horas")
+        print("-" * 30)
+        
 def editar_servicio():
     servicios = cargar_servicios()
     listar_servicios()
