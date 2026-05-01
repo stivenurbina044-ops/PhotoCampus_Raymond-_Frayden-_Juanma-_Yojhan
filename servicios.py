@@ -28,7 +28,7 @@ def listar_servicios():
         print(f"Tipo de evento: {s['tipo_evento']}")
         print(f"Duración: {s['duracion']} horas")
         print("-" * 30)
-        
+
 def editar_servicio():
     servicios = cargar_servicios()
     listar_servicios()
@@ -36,6 +36,8 @@ def editar_servicio():
     i = int(input("Seleccione índice a editar: "))
     servicios[i]["nombre"] = input("Nuevo nombre: ")
     servicios[i]["precio"] = float(input("Nuevo precio: "))
+    servicios[i]["tipo_evento"] = input("Nuevo tipo: ")
+    servicios[i]["duracion"] = float(input("Nueva duracion: "))
 
     guardar_servicios(servicios)
     print("Servicio actualizado")
